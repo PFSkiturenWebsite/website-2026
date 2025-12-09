@@ -1,110 +1,125 @@
-# PF Skituren Website
+# PF Skituren Website 2026
 
-A modern, responsive website for PF Skituren - the ski trip for students by students.
+The official website for PF Skituren 2026 - the student ski trip to Alpe d'Huez.
 
-## 🎿 About
+🌐 **Live site:** [https://pfskiturenwebsite.github.io/website-2026/](https://pfskiturenwebsite.github.io/website-2026/)
 
-This is a static website for PF Skituren, the annual ski trip organized by DTU students. The website provides information about the upcoming trip to Alpe d'Huez 2026.
+---
 
-## 🚀 Hosting on GitHub Pages
+## 📝 How to Update Content (No Coding Required!)
 
-### Quick Setup
+You can use **GitHub Copilot** directly on GitHub.com to help you make changes. Here's how:
 
-1. Create a new repository on GitHub
-2. Push this code to the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
-   git push -u origin main
-   ```
+### Step 1: Open the File on GitHub
 
-3. Enable GitHub Pages:
-   - Go to your repository on GitHub
-   - Click on **Settings** → **Pages**
-   - Under "Source", select **Deploy from a branch**
-   - Select the **main** branch and **/ (root)** folder
-   - Click **Save**
+1. Go to the repository: [github.com/PFSkiturenWebsite/website-2026](https://github.com/PFSkiturenWebsite/website-2026)
+2. Click on `index.html` (this is the main website file)
+3. Click the **pencil icon** (✏️) to edit the file
 
-4. Your site will be live at: `https://YOUR-USERNAME.github.io/YOUR-REPO/`
+### Step 2: Use GitHub Copilot to Make Changes
 
-### Custom Domain (Optional)
+Once you're in edit mode, you can use Copilot in two ways:
 
-To use a custom domain like `pfskituren.dk`:
+#### Option A: Ask Copilot Chat (Recommended)
 
-1. In your repository settings, go to **Pages**
-2. Enter your custom domain in the "Custom domain" field
-3. Add a `CNAME` file to your repository root with your domain:
-   ```
-   www.pfskituren.dk
-   ```
-4. Configure your domain's DNS settings to point to GitHub Pages
+1. Look for the **Copilot icon** in the toolbar or press `Ctrl+I` / `Cmd+I`
+2. Type what you want to change in plain language:
 
-## 📁 Project Structure
+> "Change the price from 5995 DKK to 6295 DKK"
+
+> "Update the departure date to January 24, 2026"
+
+> "Add a new FAQ question: 'Is ski equipment included?' with answer 'No, but you can rent at the destination.'"
+
+3. Copilot will suggest the changes - click **Accept** to apply them
+
+#### Option B: Edit Directly
+
+1. Use `Ctrl+F` / `Cmd+F` to find the text you want to change
+2. Make your edits directly in the file
+3. Copilot will offer suggestions as you type
+
+### Step 3: Create a Pull Request
+
+1. Scroll down after making your changes
+2. Write a short description of what you changed (e.g., "Update price to 6295 DKK")
+3. Select **"Create a new branch for this commit and start a pull request"**
+4. Give the branch a name (e.g., `update-price`)
+5. Click **"Propose changes"**
+6. Click **"Create pull request"**
+
+### Step 4: Your Changes Go Live! 🎉
+
+Once someone reviews and merges your PR, GitHub Pages automatically deploys the updated website within a few minutes.
+
+---
+
+## 🔧 Common Edits & Where to Find Them
+
+| What to change | Search for in the file |
+|----------------|----------------------|
+| Trip dates | `Friday 23.01.2026` |
+| Price | `5995 DKK` |
+| Registration links | `reqGuid=` |
+| Registration open date | `26/09/2025` or `26. September` |
+| FAQ answers | The question text |
+| Contact email | `pfskituren@gmail.com` |
+| Package includes | `The standard package includes` |
+
+---
+
+## 📁 File Structure
 
 ```
-pf-website/
-├── index.html          # Main HTML file
+website-2026/
+├── index.html          # Main website (edit this for content changes)
 ├── css/
-│   └── style.css       # All styles
+│   └── style.css       # Styling (colors, fonts, layout)
 ├── js/
-│   └── main.js         # JavaScript functionality
-├── images/             # Image assets (add your own)
+│   └── main.js         # Interactive features (navigation, FAQ)
+├── images/             # All images used on the site
 └── README.md           # This file
 ```
 
-## ✨ Features
+---
 
-- Fully responsive design
-- Mobile-friendly navigation
-- Smooth scroll navigation
-- FAQ accordion
-- Scroll animations
-- Modern CSS with custom properties
-- No build process required - just HTML, CSS, and JavaScript
+## 🚀 How Deployment Works
 
-## 🎨 Customization
+This website is hosted for **free** using GitHub Pages.
 
-### Colors
+- Every time changes are merged into `main`, the site automatically updates
+- Changes appear live within 2-5 minutes
+- Check deployment status in **Settings** → **Pages**
 
-Edit the CSS variables in `css/style.css` to change the color scheme:
+---
 
-```css
-:root {
-    --primary-color: #1e3a5f;
-    --accent-color: #e63946;
-    --ice-blue: #a8dadc;
-    /* ... more variables */
-}
-```
+## 🖼️ How to Add/Change Images
 
-### Content
+1. Go to the `images/` folder on GitHub
+2. Click **"Add file"** → **"Upload files"**
+3. Drag your image and commit
+4. To replace an image, upload a new one with the **same filename**
 
-Simply edit `index.html` to update:
-- Trip details and dates
-- Prices
-- Registration links
-- FAQ questions and answers
-- Contact information
+**Tips:**
+- Use JPG for photos, PNG for graphics, SVG for logos
+- Compress images at [tinypng.com](https://tinypng.com/) first
 
-### Images
+---
 
-Add images to the `images/` folder and reference them in the HTML:
+## 📋 Checklist Before Making a PR
 
-```html
-<img src="images/your-image.jpg" alt="Description">
-```
+- [ ] Changes look correct
+- [ ] No spelling mistakes
+- [ ] Links work
+- [ ] Dates and prices are accurate
 
-## 📱 Browser Support
+---
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
+## ❓ Need Help?
 
-## 📝 License
+- **Content questions:** Contact PF Skituren team
+- **Technical issues:** Create an issue on GitHub
 
-This project is created for PF Skituren at DTU.
+---
+
+*Made with ❄️ by PF Skituren Web Team*
