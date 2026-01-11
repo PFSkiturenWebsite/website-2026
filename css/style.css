@@ -178,7 +178,9 @@ img {
 }
 
 /* ===== Hero Section ===== */
-.hero {
+
+/* Hero Section with Photo Background */
+/* .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -191,6 +193,32 @@ img {
     background-attachment: fixed;
     overflow: hidden;
     padding-top: 60px;
+} */
+
+
+/* Updated Hero Section with Video Background */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+/* Video fills the container */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
 }
 
 .hero::before {
