@@ -1,6 +1,6 @@
-# PF Skituren Website 2026
+# PF Skituren Website 2027
 
-The official website for PF Skituren 2026 - the student ski trip to Alpe d'Huez.
+The official website for PF Skituren 20277 - the student ski trip to Val d'Isere.
 
 🌐 **Live site:** [https://pfskiturenwebsite.github.io/website-2026/](https://pfskiturenwebsite.github.io/website-2026/)
 
