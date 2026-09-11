@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    document.querySelectorAll('.info-card, .practical-card, .packing-card, .faq-item, .accommodation-card').forEach(el => {
+    document.querySelectorAll('.info-card, .practical-card, .packing-card, .faq-item, .accommodation-card, .pdf-card').forEach(el => {
         el.classList.add('animate-target');
         observer.observe(el);
     });
