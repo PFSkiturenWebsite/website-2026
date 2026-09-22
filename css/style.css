@@ -992,29 +992,34 @@ img {
 
 .destination-maps h4 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
 }
 
 .maps-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    align-items: stretch;
 }
 
 .map-card {
-    background: var(--snow-white);
-    border-radius: var(--border-radius);
+    background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(247,249,251,0.96));
+    border: 1px solid rgba(30, 58, 95, 0.08);
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: var(--shadow-md);
-    transition: var(--transition);
+    box-shadow: 0 10px 24px rgba(29, 53, 87, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-/* .map-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-} */
+.map-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 30px rgba(29, 53, 87, 0.12);
+    border-color: rgba(30, 58, 95, 0.15);
+}
 
 .guides-card img {
     width: 100%;
@@ -1022,16 +1027,27 @@ img {
     display: block;
 }
 
+.map-card img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    background: #dfeaf6;
+}
+
 .map-card h5 {
-    padding: 15px 20px 5px;
+    padding: 18px 22px 6px;
     color: var(--primary-color);
-    font-size: 1.2rem;
+    font-size: clamp(1.3rem, 1.8vw, 1.8rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
 .map-card p {
-    padding: 0 20px 20px;
+    padding: 0 22px 22px;
     color: var(--medium-gray);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 /* ===== Photo Gallery Grid ===== */
